@@ -6,4 +6,9 @@ app.get('/', (req, res) => {
    res.send('i own everything')
 })
 
+app.get('/foo', (req, res) => {
+   res.status(418)
+   res.send('foo!')
+})
+
 app.listen(port, () => console.log(`app listening on port ${port}`))
